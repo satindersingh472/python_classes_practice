@@ -9,6 +9,9 @@ class Store:
         self.productsInventory = []
         self.productsInventory.append(dict(zip(inputProducts,self.startInventory)))
 
+    def __repr__(self):
+        print("The {store} has the following products {products} ".format(store =self.name,products =  self.productsList))
+
        
 
 def decreaseInventory(productList,amountDecreased,productName):
